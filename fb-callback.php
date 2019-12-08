@@ -19,7 +19,7 @@ try {
         if ($handler->getError()) {
             header('HTTP/1.0 401 Unauthorized');
             $errors = "Errors " . $handler->getError() . " Reason: "
-                . $handler->getErrorReason() . " Desc: "
+                . $handler->getErrorReason() . " Description: "
                 . $handler->getErrorDescription();
         } else {
             // If not Error ->  is a Bad Request

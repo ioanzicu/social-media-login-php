@@ -1,0 +1,1 @@
+<?php echo "<h1>Termis and Conditions.</h1>";
