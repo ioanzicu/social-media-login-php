@@ -9,6 +9,11 @@ require_once __DIR__ . '/app/loginScript.php';
         <div class="centered">
             <h1>Social Media Login</h1>
             <hr />
+
+            <?php if (isset($_SESSION['errors'])) : ?>
+            <p> <?= $_SESSION['errors']; ?></p>
+            <?php endif; ?>
+
             <?php if (isset($_SESSION['username'], $_SESSION['id'])) : ?>
             <h2>You are logged in as <?= $_SESSION['username'] ?> </h2>
             <img src="<?= $_SESSION['avatar']; ?>" alt="<?= $_SESSION['username'] ?>" width="180" height="180">
