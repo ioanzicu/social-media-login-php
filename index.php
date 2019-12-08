@@ -22,7 +22,7 @@ require_once __DIR__ . '/app/loginScript.php';
             </p>
             <h2>OR</h2>
             <p>
-                <a href="" class="btn btn-primary btn-lg btn-block">Login With Facebook</a>
+                <a href="<?php $callback_url ?>" class="btn btn-primary btn-lg btn-block">Login With Facebook</a>
             </p>
             <p>
                 <a href="" class="btn btn-danger btn-lg btn-block">Login With Google</a>
